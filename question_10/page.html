@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webpage with button and paragraph element</title>
+    </head>
+    <body>
+        <button id="myButton">Highlight</button>
+        <p id="myParagraph"></p>
+    </body>
+    <script>
+        // 10.DOM Manipulate CSS Class:
+
+        // a. Create a webpage with a button and a paragraph element.
+
+        // b. Implement a JavaScript function that adds a CSS class named "highlight" to the paragraph element when the button is clicked. The "highlight" class should change the background color of the paragraph to yellow.
+        function highlightParagraph() {
+            const paragraph = document.getElementById("myParagraph");
+            paragraph.classList.add("highlight");
+        }
+
+        document
+            .getElementById("myButton")
+            .addEventListener("click", highlightParagraph);
+    </script>
+</html>
